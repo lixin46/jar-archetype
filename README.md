@@ -1,1 +1,1 @@
-# jar-archetype
+jar开发脚手架
