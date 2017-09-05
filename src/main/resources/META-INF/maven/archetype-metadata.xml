@@ -45,8 +45,5 @@
         <requiredProperty key="version">
             <defaultValue>1.0-SNAPSHOT</defaultValue>
         </requiredProperty>
-        <requiredProperty key="aaa">
-            <defaultValue>abc</defaultValue>
-        </requiredProperty>
     </requiredProperties>
 </archetype-descriptor>
