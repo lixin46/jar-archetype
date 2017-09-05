@@ -1,33 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype-descriptor
         xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
-        name="hello-world"
         xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        name="hello-world">
     <fileSets>
         <!-- 每个文件集合定义一个目录 -->
-        <fileSet encoding="UTF-8" packaging="false"  >
+        <fileSet encoding="UTF-8" packaged="false" filtered="false" >
             <!-- 满足模式的文件的输出目录 -->
             <directory></directory>
             <includes>
                 <include>.gitignore</include>
             </includes>
         </fileSet>
-        <fileSet encoding="UTF-8" packaging="false">
+        <fileSet encoding="UTF-8" packaged="true" filtered="true">
             <directory>src/main/java</directory>
-            <includes>**/*.java</includes>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
         </fileSet>
-        <fileSet encoding="UTF-8" packaging="false">
+        <fileSet encoding="UTF-8" packaged="true">
             <directory>src/main/resources</directory>
-            <includes>**/*</includes>
+            <includes>
+                <include>**/*</include>
+            </includes>
         </fileSet>
-        <fileSet encoding="UTF-8" packaging="false">
+        <fileSet encoding="UTF-8" packaged="true">
             <directory>src/test/java</directory>
-            <includes>**/*.java</includes>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
         </fileSet>
-        <fileSet encoding="UTF-8" packaging="false">
+        <fileSet encoding="UTF-8" packaged="true">
             <directory>src/test/resources</directory>
-            <includes>**/*</includes>
+            <includes>
+                <include>**/*</include>
+            </includes>
         </fileSet>
     </fileSets>
+    <requiredProperties>
+        <requiredProperty key="groupId">
+            <defaultValue>com.lixin</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="version">
+            <defaultValue>1.0-SNAPSHOT</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="aaa">
+            <defaultValue>abc</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
 </archetype-descriptor>
